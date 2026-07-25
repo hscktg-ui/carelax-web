@@ -7,6 +7,7 @@ import {
   ARCHIVE,
   BUY,
   CARE,
+  CEO,
   CLOSE,
   CONTACT,
   DEMOCRATIZATION,
@@ -53,7 +54,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="bg-paper px-5 py-16 md:px-8 md:py-24">
+        <section id="about" className="bg-paper px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <p className="section-label">{ABOUT.label}</p>
             <div className="brand-rule mt-4" />
@@ -71,7 +72,7 @@ export default function Home() {
             </div>
             <blockquote className="reveal mt-14 border-l-2 border-cyan pl-6">
               <p className="max-w-3xl text-lg leading-relaxed text-ink-soft md:text-xl">
-                {"\u201C"}{DEMOCRATIZATION.quote}{"\u201D"}
+                {DEMOCRATIZATION.quote}
               </p>
               <footer className="mt-3 text-sm text-muted">
                 {"\u2014"} {DEMOCRATIZATION.source} ({DEMOCRATIZATION.sourceDate})
@@ -80,7 +81,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="care" className="bg-purple px-5 py-16 text-white md:px-8 md:py-24">
+        <section id="care" className="bg-purple px-5 py-20 text-white md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <p className="section-label !text-cyan-soft">{CARE.label}</p>
             <div className="brand-rule mt-4" />
@@ -100,7 +101,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="buy" className="bg-stone px-5 py-16 md:px-8 md:py-24">
+        <section id="buy" className="bg-stone px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_0.85fr] md:items-end">
             <div>
               <p className="section-label">{BUY.label}</p>
@@ -123,7 +124,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="story" className="bg-paper px-5 py-16 md:px-8 md:py-24">
+        <section id="story" className="bg-paper px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <p className="section-label">{STORY.label}</p>
             <div className="brand-rule mt-4" />
@@ -131,18 +132,25 @@ export default function Home() {
               <h2 className="font-display text-3xl text-ink md:text-5xl">{STORY.headline}</h2>
               <p className="max-w-md text-sm text-muted md:text-base">{STORY.body}</p>
             </div>
-            <ol className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+            <ol className="mt-12 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
               {HERITAGE.map((item) => (
                 <li key={item.year} className="reveal border-t border-purple/30 pt-4">
                   <p className="text-xs font-bold tracking-[0.16em] text-cyan">{item.year}</p>
                   <h3 className="mt-2 font-display text-lg text-ink">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">{item.body}</p>
                 </li>
               ))}
             </ol>
+            <blockquote className="reveal mt-16 border-l-2 border-cyan pl-6">
+              <p className="max-w-3xl text-lg leading-relaxed text-ink-soft md:text-xl">{CEO.quote}</p>
+              <footer className="mt-3 text-sm text-muted">
+                {"\u2014"} {CEO.name} {CEO.title}, {CEO.source}
+              </footer>
+            </blockquote>
           </div>
         </section>
 
-        <section id="archive" className="bg-stone px-5 py-16 md:px-8 md:py-24">
+        <section id="archive" className="bg-stone px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <p className="section-label">{ARCHIVE.label}</p>
             <div className="brand-rule mt-4" />
@@ -165,7 +173,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="bg-paper px-5 py-16 md:px-8 md:py-24">
+        <section id="contact" className="bg-paper px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <p className="section-label">{CONTACT.label}</p>
             <div className="brand-rule mt-4" />
@@ -181,7 +189,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="close" className="bg-purple-deep px-5 py-16 text-white md:px-8 md:py-24">
+        <section id="close" className="bg-purple-deep px-5 py-20 text-white md:px-8 md:py-28">
           <div className="mx-auto max-w-3xl text-center">
             <Wordmark size="lg" showKo />
             <p className="section-label mt-8 !text-cyan-soft">{CLOSE.label}</p>
