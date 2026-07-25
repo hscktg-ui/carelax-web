@@ -109,10 +109,10 @@ export default function Home() {
 
             <blockquote className="mt-14 border-l-2 border-cyan bg-stone/40 px-6 py-6 md:px-8">
               <p className="text-base leading-relaxed text-ink-soft md:text-lg">
-                ?{DEMOCRATIZATION.quote}?
+                ‚Äú{DEMOCRATIZATION.quote}‚Äù
               </p>
               <footer className="mt-4 text-sm text-muted">
-                ? {CEO.name} {CEO.title} ∑ {DEMOCRATIZATION.source} (
+                ‚Äî {CEO.name} {CEO.title} ¬∑ {DEMOCRATIZATION.source} (
                 {DEMOCRATIZATION.sourceDate})
               </footer>
             </blockquote>
@@ -257,7 +257,7 @@ export default function Home() {
                   ??? ?? ??
                 </h2>
                 <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted md:text-base">
-                  ? ??? ???? ???? ????. ??∑???∑??∑????
+                  ? ??? ???? ???? ????. ??ÔøΩ???ÔøΩ??ÔøΩ????
                   ??? ????.
                 </p>
               </div>
@@ -299,7 +299,7 @@ export default function Home() {
                   </div>
                   <div className="mt-5 flex flex-1 flex-col">
                     <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-purple-soft">
-                      {product.needLabel} ∑ {product.badge}
+                      {product.needLabel} ÔøΩ {product.badge}
                     </p>
                     <h3 className="font-display mt-2 text-2xl text-ink">
                       {product.nameKo}{" "}
@@ -367,7 +367,7 @@ export default function Home() {
               2016?? ????.
             </h2>
             <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-              ?? ???? 1??? ????? ??? ?, ?????∑??? ?? ??? ?? ????? ?? ???? ?????.
+              ?? ???? 1??? ????? ??? ?, ?????ÔøΩ??? ?? ??? ?? ????? ?? ???? ?????.
             </p>
             <div className="mt-12 grid gap-8 md:grid-cols-4">
               {HERITAGE.map((item) => (
@@ -390,7 +390,7 @@ export default function Home() {
                 ?{CEO.quote}?
               </p>
               <footer className="mt-4 text-sm text-muted">
-                ? {CEO.name} {CEO.title} ∑ {CEO.source} ({CEO.sourceDate})
+                ? {CEO.name} {CEO.title} ÔøΩ {CEO.source} ({CEO.sourceDate})
               </footer>
             </blockquote>
           </div>
