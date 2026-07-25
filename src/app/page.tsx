@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       <main id="main">
         {/* 1. Hero — brand first (anti-promo clutter) */}
-        <section id="top" className="relative min-h-[100svh] overflow-hidden bg-teal-deep text-stone">
+        <section id="top" className="relative min-h-[100svh] overflow-hidden bg-purple-deep text-white">
           <Image
             src="/images/hero-living.jpg"
             alt="현대적인 거실에 놓인 케어렉스 리클라이너 안마의자"
@@ -33,13 +33,20 @@ export default function Home() {
 
           <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 md:justify-center md:px-8 md:pb-24 md:pt-20">
             <p className="section-label fade-up">{SITE.positioning}</p>
-            <h1 className="font-display fade-up-delay mt-4 text-[clamp(3.2rem,12vw,7.5rem)] leading-[0.95] tracking-wide text-stone">
-              CARELAX
-            </h1>
-            <p className="fade-up-delay mt-3 text-lg tracking-[0.28em] text-champagne-soft md:text-xl">
+            <div className="fade-up-delay mt-5">
+              <Image
+                src="/brand/logo-on-dark.png"
+                alt="Carelax"
+                width={420}
+                height={117}
+                className="h-14 w-auto md:h-20"
+                priority
+              />
+            </div>
+            <p className="fade-up-delay mt-3 text-lg tracking-[0.28em] text-cyan-soft md:text-xl">
               {SITE.nameKo}
             </p>
-            <p className="fade-up-delay-2 mt-6 max-w-md text-base leading-relaxed text-stone/90 md:text-lg">
+            <p className="fade-up-delay-2 mt-6 max-w-md text-base leading-relaxed text-white/90 md:text-lg">
               {SITE.tagline}.
               <br />
               안마볼 케어로, 거실에 스며드는 회복을 만듭니다.
@@ -49,13 +56,13 @@ export default function Home() {
                 href={SITE.flagshipProductUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm bg-champagne px-6 py-3 text-sm font-semibold tracking-wide text-teal-deep transition hover:bg-champagne-soft"
+                className="rounded-sm bg-cyan px-6 py-3 text-sm font-bold tracking-wide text-purple-deep transition hover:bg-cyan-soft"
               >
                 주력 상품 구매
               </a>
               <a
                 href="#position"
-                className="rounded-sm border border-stone/35 px-6 py-3 text-sm font-medium tracking-wide text-stone transition hover:border-champagne-soft hover:text-champagne-soft"
+                className="rounded-sm border border-white/35 px-6 py-3 text-sm font-medium tracking-wide text-stone transition hover:border-cyan-soft hover:text-cyan-soft"
               >
                 왜 케어렉스인가
               </a>
@@ -113,13 +120,13 @@ export default function Home() {
                   key={item.key}
                   className="border-t border-stone-deep/70 pt-6"
                 >
-                  <p className="text-xs font-semibold tracking-[0.22em] text-teal-soft">
+                  <p className="text-xs font-semibold tracking-[0.22em] text-purple-soft">
                     0{i + 1}
                   </p>
                   <h3 className="font-display mt-3 text-2xl text-ink md:text-3xl">
                     {item.key}
                   </h3>
-                  <p className="mt-1 text-sm tracking-wide text-champagne">
+                  <p className="mt-1 text-sm tracking-wide text-cyan">
                     {item.titleKo}
                   </p>
                   <p className="mt-4 text-sm leading-relaxed text-muted md:text-[0.95rem]">
@@ -132,7 +139,7 @@ export default function Home() {
         </section>
 
         {/* 4. Method — named tech language */}
-        <section id="method" className="bg-teal text-stone">
+        <section id="method" className="bg-purple text-white">
           <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
             <p className="section-label">Care Method</p>
             <div className="brand-rule mt-4" />
@@ -141,7 +148,7 @@ export default function Home() {
               <br />
               회복은 습관이 됩니다.
             </h2>
-            <p className="mt-5 max-w-xl text-sm leading-relaxed text-stone/75 md:text-base">
+            <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/75 md:text-base">
               거대 브랜드의 특허 스펙터클 대신, 케어렉스는 세 가지 케어
               언어로 제품의 이유를 설명합니다.
             </p>
@@ -150,13 +157,13 @@ export default function Home() {
               {METHODS.map((m) => (
                 <article
                   key={m.code}
-                  className="border border-champagne/25 bg-teal-deep/40 p-7"
+                  className="border border-cyan/25 bg-purple-deep/40 p-7"
                 >
-                  <p className="text-[0.7rem] font-semibold tracking-[0.2em] text-champagne-soft">
+                  <p className="text-[0.7rem] font-semibold tracking-[0.2em] text-cyan-soft">
                     {m.code}
                   </p>
                   <h3 className="font-display mt-3 text-2xl">{m.title}</h3>
-                  <p className="mt-4 text-sm leading-relaxed text-stone/75">
+                  <p className="mt-4 text-sm leading-relaxed text-white/75">
                     {m.body}
                   </p>
                 </article>
@@ -192,15 +199,15 @@ export default function Home() {
               </p>
               <ul className="mt-8 space-y-3 text-sm text-ink-soft">
                 <li className="flex gap-3">
-                  <span className="text-champagne">—</span>
+                  <span className="text-cyan">—</span>
                   Soft Mode 중심의 부담 없는 케어감
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-champagne">—</span>
+                  <span className="text-cyan">—</span>
                   거실에 어울리는 리클라이너 실루엣
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-champagne">—</span>
+                  <span className="text-cyan">—</span>
                   네이버 스마트스토어 단일 구매 경로
                 </li>
               </ul>
@@ -208,7 +215,7 @@ export default function Home() {
                 href={SITE.flagshipProductUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-10 inline-flex w-fit rounded-sm bg-teal px-6 py-3.5 text-sm font-semibold tracking-wide text-stone transition hover:bg-teal-deep"
+                className="mt-10 inline-flex w-fit rounded-sm bg-purple px-6 py-3.5 text-sm font-semibold tracking-wide text-stone transition hover:bg-purple-deep"
               >
                 주력 상품 페이지 열기
               </a>
@@ -235,7 +242,7 @@ export default function Home() {
                 href={SITE.smartStoreUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-fit rounded-sm bg-teal px-5 py-3 text-sm font-semibold tracking-wide text-stone transition hover:bg-teal-deep"
+                className="inline-flex w-fit rounded-sm bg-purple px-5 py-3 text-sm font-semibold tracking-wide text-stone transition hover:bg-purple-deep"
               >
                 스마트스토어 보기
               </a>
@@ -245,7 +252,7 @@ export default function Home() {
               {NEED_GROUPS.map((g) => (
                 <div
                   key={g.id}
-                  className="border-t border-teal/30 bg-paper/60 px-4 py-5"
+                  className="border-t border-purple/30 bg-paper/60 px-4 py-5"
                 >
                   <p className="text-sm font-semibold tracking-wide text-ink">
                     {g.label}
@@ -268,7 +275,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="mt-5 flex flex-1 flex-col">
-                    <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-teal-soft">
+                    <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-purple-soft">
                       {product.needLabel} · {product.badge}
                     </p>
                     <h3 className="font-display mt-2 text-2xl text-ink">
@@ -285,7 +292,7 @@ export default function Home() {
                       href={SITE.flagshipProductUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-5 inline-flex text-sm font-semibold text-teal underline-offset-4 hover:underline"
+                      className="mt-5 inline-flex text-sm font-semibold text-purple underline-offset-4 hover:underline"
                     >
                       스토어에서 구매 →
                     </a>
@@ -309,7 +316,7 @@ export default function Home() {
                       sizes="(max-width: 640px) 50vw, 20vw"
                     />
                   </div>
-                  <p className="text-[0.65rem] font-semibold tracking-[0.14em] text-teal-soft">
+                  <p className="text-[0.65rem] font-semibold tracking-[0.14em] text-purple-soft">
                     {product.needLabel}
                   </p>
                   <h3 className="mt-1 font-display text-xl text-ink">
@@ -339,7 +346,7 @@ export default function Home() {
                   key={item.title}
                   className="border-t border-stone-deep pt-6"
                 >
-                  <h3 className="text-sm font-semibold tracking-[0.16em] text-champagne">
+                  <h3 className="text-sm font-semibold tracking-[0.16em] text-cyan">
                     {item.title}
                   </h3>
                   <p className="mt-3 text-base leading-relaxed text-ink-soft">
@@ -352,7 +359,7 @@ export default function Home() {
         </section>
 
         {/* 8. Final CTA */}
-        <section className="relative overflow-hidden bg-teal-deep px-5 py-20 text-stone md:px-8 md:py-28">
+        <section className="relative overflow-hidden bg-purple-deep px-5 py-20 text-stone md:px-8 md:py-28">
           <div className="grain absolute inset-0 opacity-30" />
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <p className="section-label">Buy on Smart Store</p>
@@ -361,7 +368,7 @@ export default function Home() {
               <br />
               구매는 스마트스토어에서.
             </h2>
-            <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-stone/75 md:text-base">
+            <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-white/75 md:text-base">
               복잡한 자사몰 대신, 케어렉스는 스마트스토어 한 길로 구매를
               단순화합니다.
             </p>
@@ -370,7 +377,7 @@ export default function Home() {
                 href={SITE.flagshipProductUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm bg-champagne px-7 py-3.5 text-sm font-semibold tracking-wide text-teal-deep transition hover:bg-champagne-soft"
+                className="rounded-sm bg-cyan px-7 py-3.5 text-sm font-bold tracking-wide text-purple-deep transition hover:bg-cyan-soft"
               >
                 주력 상품 구매
               </a>
@@ -378,13 +385,13 @@ export default function Home() {
                 href={SITE.smartStoreUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm border border-stone/35 px-7 py-3.5 text-sm font-medium tracking-wide transition hover:border-champagne-soft hover:text-champagne-soft"
+                className="rounded-sm border border-white/35 px-7 py-3.5 text-sm font-medium tracking-wide transition hover:border-cyan-soft hover:text-cyan-soft"
               >
                 스토어 홈
               </a>
               <a
                 href={`tel:${SITE.phones.purchase}`}
-                className="rounded-sm border border-stone/35 px-7 py-3.5 text-sm font-medium tracking-wide transition hover:border-champagne-soft hover:text-champagne-soft"
+                className="rounded-sm border border-white/35 px-7 py-3.5 text-sm font-medium tracking-wide transition hover:border-cyan-soft hover:text-cyan-soft"
               >
                 구매문의 {SITE.phones.purchase}
               </a>

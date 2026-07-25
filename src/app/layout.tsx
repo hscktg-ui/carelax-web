@@ -1,25 +1,26 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope, Song_Myung } from "next/font/google";
+import { Montserrat, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import { SITE } from "@/lib/site";
 
-const manrope = Manrope({
+const montserrat = Montserrat({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+  display: "swap",
+});
+
+const notoSans = Noto_Sans_KR({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-const songMyung = Song_Myung({
-  variable: "--font-display",
-  weight: "400",
-  display: "swap",
-});
-
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#0f2e2b" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f2e2b" },
+    { media: "(prefers-color-scheme: light)", color: "#46247d" },
+    { media: "(prefers-color-scheme: dark)", color: "#46247d" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -109,7 +110,7 @@ export default function RootLayout({
         name: SITE.nameKo,
         alternateName: SITE.nameEn,
         url: "https://carelax-web.vercel.app",
-        logo: "https://carelax-web.vercel.app/icon.png",
+        logo: "https://carelax-web.vercel.app/brand/logo.png",
         telephone: SITE.phones.service,
         address: {
           "@type": "PostalAddress",
@@ -137,12 +138,12 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${manrope.variable} ${songMyung.variable} h-full antialiased`}
+      className={`${montserrat.variable} ${notoSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-paper text-ink">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-champagne focus:px-4 focus:py-2 focus:text-teal-deep"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-cyan focus:px-4 focus:py-2 focus:text-purple-deep"
         >
           본문으로 건너뛰기
         </a>
