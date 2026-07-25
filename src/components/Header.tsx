@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { SITE } from "@/lib/site";
 
 const links = [
-  { href: "#position", label: "포지션" },
+  { href: "#company", label: "회사소개" },
   { href: "#heritage", label: "연혁" },
   { href: "#philosophy", label: "철학" },
   { href: "#method", label: "케어" },

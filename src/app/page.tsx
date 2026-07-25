@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
   CEO,
+  COMPANY,
   HERITAGE,
   METHODS,
   NEED_GROUPS,
@@ -63,7 +64,7 @@ export default function Home() {
                 주력 상품 구매
               </a>
               <a
-                href="#position"
+                href="#company"
                 className="rounded-sm border border-white/35 px-6 py-3 text-sm font-medium tracking-wide text-stone transition hover:border-cyan-soft hover:text-cyan-soft"
               >
                 왜 케어렉스인가
@@ -73,25 +74,34 @@ export default function Home() {
         </section>
 
         {/* 2. Position — market coordinate */}
-        <section id="position" className="bg-paper px-5 py-20 md:px-8 md:py-28">
+        <section id="company" className="bg-paper px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
-            <p className="section-label">{POSITION.label}</p>
+            <p className="section-label">{COMPANY.label}</p>
             <div className="brand-rule mt-4" />
-            <h2 className="font-display mt-6 max-w-3xl whitespace-pre-line text-3xl leading-snug text-ink md:text-5xl">
-              {POSITION.title}
+            <h2 className="font-display mt-6 max-w-4xl whitespace-pre-line text-3xl leading-snug text-ink md:text-5xl">
+              {COMPANY.headline}
             </h2>
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
-              {POSITION.body}
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted md:text-lg">
+              {COMPANY.intro}
             </p>
-            <div className="mt-14 grid gap-8 border-t border-stone-deep/60 pt-10 md:grid-cols-3">
-              {POSITION.pillars.map((item) => (
-                <article key={item.title}>
-                  <h3 className="font-display text-xl text-ink md:text-2xl">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">
-                    {item.body}
+
+            <div className="mt-16 space-y-14 md:space-y-20">
+              {COMPANY.chapters.map((chapter, i) => (
+                <article
+                  key={chapter.title}
+                  className="grid gap-4 border-t border-stone-deep pt-8 md:grid-cols-[7rem_1fr] md:gap-10"
+                >
+                  <p className="text-xs font-bold tracking-[0.2em] text-purple-soft">
+                    0{i + 1}
                   </p>
+                  <div>
+                    <h3 className="font-display text-2xl leading-snug text-ink md:text-3xl">
+                      {chapter.title}
+                    </h3>
+                    <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted md:text-base">
+                      {chapter.body}
+                    </p>
+                  </div>
                 </article>
               ))}
             </div>
