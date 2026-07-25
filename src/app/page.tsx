@@ -3,8 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
   CEO,
-  COMPANY,
   DEMOCRATIZATION,
+  COMPANY,
   HERITAGE,
   METHODS,
   NEED_GROUPS,
@@ -22,11 +22,11 @@ export default function Home() {
     <>
       <Header />
       <main id="main">
-        {/* 1. Hero ? brand first (anti-promo clutter) */}
+        {/* 1. Hero — brand first (anti-promo clutter) */}
         <section id="top" className="relative min-h-[100svh] overflow-hidden bg-purple-deep text-white">
           <Image
             src="/images/hero-living.jpg"
-            alt="???? ??? ?? ???? ????? ????"
+            alt="현대적인 거실에 놓인 케어렉스 리클라이너 안마의자"
             fill
             priority
             className="object-cover object-center"
@@ -53,7 +53,7 @@ export default function Home() {
             <p className="fade-up-delay-2 mt-6 max-w-md text-base leading-relaxed text-white/90 md:text-lg">
               {SITE.tagline}.
               <br />
-              ??? ???, ??? ???? ??? ????.
+              안마볼 케어로, 거실에 스며드는 회복을 만듭니다.
             </p>
             <div className="fade-up-delay-2 mt-9 flex flex-wrap items-center gap-3">
               <a
@@ -62,19 +62,19 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="rounded-sm bg-cyan px-6 py-3 text-sm font-bold tracking-wide text-purple-deep transition hover:bg-cyan-soft"
               >
-                ?? ?? ??
+                주력 상품 구매
               </a>
               <a
                 href="#company"
                 className="rounded-sm border border-white/35 px-6 py-3 text-sm font-medium tracking-wide text-stone transition hover:border-cyan-soft hover:text-cyan-soft"
               >
-                ? ??????
+                왜 케어렉스인가
               </a>
             </div>
           </div>
         </section>
 
-        {/* 2. Position ? market coordinate */}
+        {/* 2. Position — market coordinate */}
         <section id="company" className="bg-paper px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <p className="section-label">{COMPANY.label}</p>
@@ -106,7 +106,6 @@ export default function Home() {
                 </article>
               ))}
             </div>
-
             <blockquote className="mt-14 border-l-2 border-cyan bg-stone/40 px-6 py-6 md:px-8">
               <p className="text-base leading-relaxed text-ink-soft md:text-lg">
                 “{DEMOCRATIZATION.quote}”
@@ -128,12 +127,12 @@ export default function Home() {
               <h2 className="font-display mt-6 text-3xl leading-snug text-ink md:text-5xl">
                 Care + Relax.
                 <br />
-                ??? ????.
+                회복을 일상으로.
               </h2>
               <p className="mt-6 text-base leading-relaxed text-muted md:text-lg">
-                ????? ???? ??? ???? ???? ????, ??
-                ?? ?? ??? ?? ?? ????? ???. ???? ??
-                ??? ???.
+                케어렉스는 안마볼이 신체를 두드리고 주무르는 방식으로, 짧은
+                시간 안에 피로를 푸는 것을 최우선으로 합니다. 강함보다 지속
+                가능한 편안함.
               </p>
             </div>
 
@@ -161,19 +160,19 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 4. Method ? named tech language */}
+        {/* 4. Method — named tech language */}
         <section id="method" className="bg-purple text-white">
           <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
             <p className="section-label">Care Method</p>
             <div className="brand-rule mt-4" />
             <h2 className="font-display mt-6 max-w-2xl text-3xl leading-snug md:text-4xl">
-              ??? ??? ????.
+              기술은 이름을 갖습니다.
               <br />
-              ??? ??? ???.
+              회복은 습관이 됩니다.
             </h2>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/75 md:text-base">
-              ?? ???? ?? ???? ??, ????? ? ?? ??
-              ??? ??? ??? ?????.
+              거대 브랜드의 특허 스펙터클 대신, 케어렉스는 세 가지 케어
+              언어로 제품의 이유를 설명합니다.
             </p>
 
             <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -195,13 +194,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 5. Signature ? flagship first */}
+        {/* 5. Signature — flagship first */}
         <section id="signature" className="bg-paper">
           <div className="mx-auto grid max-w-6xl gap-0 md:grid-cols-2 md:items-stretch">
             <div className="relative min-h-[420px] md:min-h-[560px]">
               <Image
                 src="/images/product-honors.jpg"
-                alt="???? ???? ????"
+                alt="케어렉스 시그니처 안마의자"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -211,27 +210,27 @@ export default function Home() {
               <p className="section-label">Signature</p>
               <div className="brand-rule mt-4" />
               <h2 className="font-display mt-6 text-3xl leading-snug text-ink md:text-4xl">
-                ? ?? ????
+                한 대의 주력으로
                 <br />
-                ????? ????.
+                케어렉스를 만납니다.
               </h2>
               <p className="mt-5 text-sm leading-relaxed text-muted md:text-base">
-                ???? ?? ??, ?????? ?? ???? ?????
-                ???? ??? ?? ?????. ??? ???? ???, ????
-                ??? ?????.
+                라인업을 훑기 전에, 스마트스토어 주력 상품에서 케어렉스의
+                안마감과 마감을 먼저 확인하세요. 브랜드 사이트는 이해를, 스토어는
+                구매를 담당합니다.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-ink-soft">
                 <li className="flex gap-3">
-                  <span className="text-cyan">?</span>
-                  Soft Mode ??? ?? ?? ???
+                  <span className="text-cyan">—</span>
+                  Soft Mode 중심의 부담 없는 케어감
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-cyan">?</span>
-                  ??? ???? ????? ???
+                  <span className="text-cyan">—</span>
+                  거실에 어울리는 리클라이너 실루엣
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-cyan">?</span>
-                  ??? ?????? ?? ?? ??
+                  <span className="text-cyan">—</span>
+                  네이버 스마트스토어 단일 구매 경로
                 </li>
               </ul>
               <a
@@ -240,7 +239,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="mt-10 inline-flex w-fit rounded-sm bg-purple px-6 py-3.5 text-sm font-semibold tracking-wide text-stone transition hover:bg-purple-deep"
               >
-                ?? ?? ??? ??
+                주력 상품 페이지 열기
               </a>
             </div>
           </div>
@@ -254,11 +253,11 @@ export default function Home() {
                 <p className="section-label">Lineup by Need</p>
                 <div className="brand-rule mt-4" />
                 <h2 className="font-display mt-6 text-3xl text-ink md:text-5xl">
-                  ??? ?? ??
+                  필요에 맞는 케어
                 </h2>
                 <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted md:text-base">
-                  ? ??? ???? ???? ????. ??�???�??�????
-                  ??? ????.
+                  전 모델을 평등하게 나열하지 않습니다. 가족·스마트·공간·비즈니스
+                  니즈로 고릅니다.
                 </p>
               </div>
               <a
@@ -267,7 +266,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex w-fit rounded-sm bg-purple px-5 py-3 text-sm font-semibold tracking-wide text-stone transition hover:bg-purple-deep"
               >
-                ?????? ??
+                스마트스토어 보기
               </a>
             </div>
 
@@ -299,7 +298,7 @@ export default function Home() {
                   </div>
                   <div className="mt-5 flex flex-1 flex-col">
                     <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-purple-soft">
-                      {product.needLabel} � {product.badge}
+                      {product.needLabel} · {product.badge}
                     </p>
                     <h3 className="font-display mt-2 text-2xl text-ink">
                       {product.nameKo}{" "}
@@ -317,7 +316,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="mt-5 inline-flex text-sm font-semibold text-purple underline-offset-4 hover:underline"
                     >
-                      ????? ?? ?
+                      스토어에서 구매 →
                     </a>
                   </div>
                 </article>
@@ -362,14 +361,14 @@ export default function Home() {
             <p className="section-label">Heritage</p>
             <div className="brand-rule mt-4" />
             <h2 className="font-display mt-6 text-3xl text-ink md:text-4xl">
-              2007?? ??? ??,
+              2007부터 쌓아온 기술,
               <br />
-              2016?? ????.
+              2016부터 케어렉스.
             </h2>
             <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-              ?? ???? 1??? ????? ??? ?, ?????�??? ?? ??? ?? ????? ?? ???? ?????.
+              국내 안마의자 1세대로 이노코프를 출범한 뒤, 후지의료기·다이와 공급 경험을 거쳐 케어렉스로 독자 브랜드를 세웠습니다.
             </p>
-            <div className="mt-12 grid gap-8 md:grid-cols-4">
+            <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-5">
               {HERITAGE.map((item) => (
                 <article key={item.year} className="border-t border-purple/30 pt-5">
                   <p className="text-xs font-bold tracking-[0.18em] text-cyan">
@@ -387,10 +386,10 @@ export default function Home() {
 
             <blockquote className="mt-14 border-l-2 border-purple bg-stone/50 px-6 py-6 md:px-8">
               <p className="text-base leading-relaxed text-ink-soft md:text-lg">
-                ?{CEO.quote}?
+                “{CEO.quote}”
               </p>
               <footer className="mt-4 text-sm text-muted">
-                ? {CEO.name} {CEO.title} � {CEO.source} ({CEO.sourceDate})
+                — {CEO.name} {CEO.title} · {CEO.source} ({CEO.sourceDate})
               </footer>
             </blockquote>
           </div>
@@ -401,9 +400,9 @@ export default function Home() {
             <p className="section-label">Trust & Care</p>
             <div className="brand-rule mt-4" />
             <h2 className="font-display mt-6 text-3xl text-ink md:text-4xl">
-              ?? ? ?? ??? ????.
+              믿을 수 있는 경로만 남깁니다.
             </h2>
-            <div className="mt-12 grid gap-8 md:grid-cols-3">
+            <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
               {TRUST.map((item) => (
                 <article
                   key={item.title}
@@ -415,6 +414,16 @@ export default function Home() {
                   <p className="mt-3 text-base leading-relaxed text-ink-soft">
                     {item.body}
                   </p>
+                  {item.title === "공식 블로그" && (
+                    <a
+                      href={SITE.blogUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-block text-sm font-semibold text-purple underline-offset-4 hover:underline"
+                    >
+                      blog.naver.com/carelax0606
+                    </a>
+                  )}
                 </article>
               ))}
             </div>
@@ -427,13 +436,13 @@ export default function Home() {
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <p className="section-label">Buy on Smart Store</p>
             <h2 className="font-display mt-5 text-3xl md:text-5xl">
-              ??? ???,
+              이해는 여기서,
               <br />
-              ??? ????????.
+              구매는 스마트스토어에서.
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-white/75 md:text-base">
-              ??? ??? ??, ????? ?????? ? ?? ???
-              ??????.
+              복잡한 자사몰 대신, 케어렉스는 스마트스토어 한 길로 구매를
+              단순화합니다.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
               <a
@@ -442,7 +451,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="rounded-sm bg-cyan px-7 py-3.5 text-sm font-bold tracking-wide text-purple-deep transition hover:bg-cyan-soft"
               >
-                ?? ?? ??
+                주력 상품 구매
               </a>
               <a
                 href={SITE.smartStoreUrl}
@@ -450,13 +459,13 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="rounded-sm border border-white/35 px-7 py-3.5 text-sm font-medium tracking-wide transition hover:border-cyan-soft hover:text-cyan-soft"
               >
-                ??? ?
+                스토어 홈
               </a>
               <a
                 href={`tel:${SITE.phones.purchase}`}
                 className="rounded-sm border border-white/35 px-7 py-3.5 text-sm font-medium tracking-wide transition hover:border-cyan-soft hover:text-cyan-soft"
               >
-                ???? {SITE.phones.purchase}
+                구매문의 {SITE.phones.purchase}
               </a>
             </div>
           </div>

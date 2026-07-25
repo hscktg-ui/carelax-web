@@ -65,6 +65,14 @@ export default function Footer() {
           >
             스마트스토어 케어렉스
           </a>
+          <a
+            href={SITE.blogUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 block text-sm text-white/70 underline-offset-4 hover:text-cyan-soft hover:underline"
+          >
+            공식 네이버 블로그
+          </a>
           <p className="mt-3 text-xs leading-relaxed text-white/50">
             본 사이트는 브랜드 소개용이며, 구매·결제는 네이버 스마트스토어에서
             진행됩니다.
