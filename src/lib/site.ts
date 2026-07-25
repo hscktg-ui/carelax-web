@@ -2,7 +2,7 @@
 export const SITE = {
   nameKo: "케어렉스",
   nameEn: "Carelax",
-  tagline: "짧은 휴식, 깊은 회복",
+  tagline: "짧은 회복, 긴 신뢰",
   positioning: "Accessible Quiet Recovery",
   description:
     "케어렉스는 안마볼 케어로 일상의 피로를 짧게, 깊게 풀어내는 안마의자·리클라이너 브랜드입니다.",
@@ -14,6 +14,8 @@ export const SITE = {
     purchase: "1588-1070",
     service: "1877-1244",
   },
+  warrantyMonths: 61,
+  warrantyLabel: "61개월 무상 A/S",
   hours: "평일 AM 09:00 ~ PM 05:00 (토·일·공휴일 휴무)",
   company: {
     legalName: "주식회사 케어렉스",
@@ -26,6 +28,41 @@ export const SITE = {
     fax: "02-2144-5657",
   },
 } as const;
+
+
+/** FashionBiz 2023.03.09 https://fashionbiz.co.kr/article/198836 */
+export const CEO = {
+  name: "노재학",
+  title: "대표이사",
+  quote:
+    "안마의자의 핵심은 쌓인 피로를 안마의자 내부의 볼을 이용해 짧은 시간 동안 회복할 수 있도록 고객의 신체를 두드리고 주무르고 늘리는데 있다. 최상의 컨디션으로 회복하기 위해 고객 별 상태에 맞춰 이런 기능들을 미세하게 조정을 하며 제공하는 것이 필수다.",
+  source: "패션비즈",
+  sourceUrl: "https://fashionbiz.co.kr/article/198836",
+  sourceDate: "2023.03.09",
+} as const;
+
+export const HERITAGE = [
+  {
+    year: "2007",
+    title: "이노코프 출범",
+    body: "국내 안마의자 1세대로 브랜드를 시작했습니다.",
+  },
+  {
+    year: "2007-2016",
+    title: "글로벌 공급 경험",
+    body: "일본 후지의료기, 다이와 등 다양한 브랜드를 국내에 공급하며 기술력을 쌍았습니다.",
+  },
+  {
+    year: "2016",
+    title: "케어렉스 독자 브랜드",
+    body: "사명을 케어렉스로 변경하고 독자적인 안마의자를 출시했습니다.",
+  },
+  {
+    year: "Now",
+    title: "61개월 무상 A/S",
+    body: "특화 라인 생산과 전용 모터 기술로 품질 자신감을 증명합니다.",
+  },
+] as const;
 
 /** 시장 속 좌표 — 경쟁사 분석 합의 */
 export const POSITION = {
@@ -42,7 +79,7 @@ export const POSITION = {
       body: "풀사이즈부터 컴팩트까지. 공간이 제품을 고르게 합니다.",
     },
     {
-      title: "One Clear Path",
+      title: "61 Months Care",
       body: "브랜드에서 이해하고, 스마트스토어에서 구매합니다.",
     },
   ],
@@ -95,7 +132,7 @@ export const TRUST = [
     body: `구매문의 ${SITE.phones.purchase}`,
   },
   {
-    title: "A/S",
+    title: "61개월 무상 A/S",
     body: `A/S ${SITE.phones.service} · ${SITE.hours}`,
   },
 ] as const;

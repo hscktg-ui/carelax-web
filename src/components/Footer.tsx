@@ -2,7 +2,7 @@ import Image from "next/image";
 import { SITE } from "@/lib/site";
 
 export default function Footer() {
-  const { company, phones, hours } = SITE;
+  const { company, phones, hours, warrantyLabel } = SITE;
 
   return (
     <footer className="bg-purple-deep text-white">
@@ -42,6 +42,7 @@ export default function Footer() {
                 {phones.service}
               </a>
             </li>
+            <li className="font-semibold text-cyan-soft">{warrantyLabel}</li>
             <li className="text-white/60">{hours}</li>
           </ul>
         </div>

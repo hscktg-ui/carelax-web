@@ -2,6 +2,8 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
+  CEO,
+  HERITAGE,
   METHODS,
   NEED_GROUPS,
   PHILOSOPHY,
@@ -333,6 +335,46 @@ export default function Home() {
         </section>
 
         {/* 7. Trust */}
+
+        <section id="heritage" className="bg-paper px-5 py-20 md:px-8 md:py-28">
+          <div className="mx-auto max-w-6xl">
+            <p className="section-label">Heritage</p>
+            <div className="brand-rule mt-4" />
+            <h2 className="font-display mt-6 text-3xl text-ink md:text-4xl">
+              2007부터 쌓아온 기술,
+              <br />
+              2016부터 케어렉스.
+            </h2>
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
+              국내 안마의자 1세대로 이노코프를 출범한 뒤, 후지의료기·다이와 공급 경험을 거쳐 케어렉스로 독자 브랜드를 세웠습니다.
+            </p>
+            <div className="mt-12 grid gap-8 md:grid-cols-4">
+              {HERITAGE.map((item) => (
+                <article key={item.year} className="border-t border-purple/30 pt-5">
+                  <p className="text-xs font-bold tracking-[0.18em] text-cyan">
+                    {item.year}
+                  </p>
+                  <h3 className="mt-2 font-display text-xl text-ink">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">
+                    {item.body}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <blockquote className="mt-14 border-l-2 border-purple bg-stone/50 px-6 py-6 md:px-8">
+              <p className="text-base leading-relaxed text-ink-soft md:text-lg">
+                “{CEO.quote}”
+              </p>
+              <footer className="mt-4 text-sm text-muted">
+                — {CEO.name} {CEO.title} · {CEO.source} ({CEO.sourceDate})
+              </footer>
+            </blockquote>
+          </div>
+        </section>
+
         <section id="support" className="bg-paper px-5 py-20 md:px-8 md:py-24">
           <div className="mx-auto max-w-6xl">
             <p className="section-label">Trust & Care</p>

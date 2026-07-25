@@ -6,6 +6,7 @@ import { SITE } from "@/lib/site";
 
 const links = [
   { href: "#position", label: "포지션" },
+  { href: "#heritage", label: "연혁" },
   { href: "#philosophy", label: "철학" },
   { href: "#method", label: "케어" },
   { href: "#signature", label: "시그니처" },
