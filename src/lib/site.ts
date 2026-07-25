@@ -3,7 +3,7 @@ export const SITE = {
   year: 2026,
   nameKo: "케어렉스", nameEn: "Carelax", tagline: "헬스케어 대중화",
   thesis: "고품질 헬스케어를 합리적으로 — 누구에게나 회복이 닿게.", positioning: "Healthcare Democratization",
-  description: "케어렉스는 고품질 헬스케어를 합리적으로 제안하며, 누구에게나 회복이 닿는 일상을 만듭니다.",
+  description: "2026 케어렉스 — 2006년부터 이어 온 헬스케어 대중화. 단종 라인업은 아카이브로, 구매는 공식 스마트스토어에서.",
   smartStoreUrl: "https://smartstore.naver.com/carelax", blogUrl: "https://blog.naver.com/carelax0606",
   phones: { purchase: "1588-1070", service: "1877-1244" }, warrantyMonths: 61, warrantyLabel: "61개월 무상 A/S", hours: "평일 AM 09:00 ~ PM 05:00 (토·일·공휴일 휴무)",
   company: { legalName: "주식회사 케어렉스", ceo: "노재학", address: "경기도 하남시 조정대로 150 (덕풍동) 아이테코 그린존 923호 (12930)", businessNo: "195-87-00745", mailOrderNo: "제 2020-경기하남-0800", privacyOfficer: "매니저 노성진", fax: "02-2144-5657" },

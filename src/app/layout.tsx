@@ -70,11 +70,11 @@ export const metadata: Metadata = {
     description: SITE.description,
     images: [
       {
-        url: "/og-preview.png",
+        url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: `${SITE.nameKo} — ${SITE.tagline}`,
-        type: "image/png",
+        alt: `${SITE.nameKo} ${SITE.year} — ${SITE.tagline}`,
+        type: "image/jpeg",
       },
     ],
   },
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE.nameKo} | ${SITE.tagline}`,
     description: SITE.description,
-    images: ["/og-preview.png"],
+    images: ["/og.jpg"],
   },
   icons: {
     icon: [
@@ -108,7 +108,7 @@ export default function RootLayout({
         name: SITE.nameKo,
         alternateName: SITE.nameEn,
         url: "https://carelax-web.vercel.app",
-        logo: "https://carelax-web.vercel.app/brand/mark-c.png",
+        logo: "https://carelax-web.vercel.app/icon.png",
         telephone: SITE.phones.service,
         address: {
           "@type": "PostalAddress",
