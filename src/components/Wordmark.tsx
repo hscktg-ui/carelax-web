@@ -24,7 +24,7 @@ export default function Wordmark({
 
   return (
     <span className={`inline-flex flex-col ${className}`}>
-      <span className={`font-brand ${sizeMap[size]} ${color}`}>Carelax</span>
+      <span className={`font-brand ${sizeMap[size]} ${color}`}>CARELAX</span>
       {showKo ? (
         <span
           className={`mt-1 text-sm font-medium tracking-[0.35em] md:text-base ${koColor}`}

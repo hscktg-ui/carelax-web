@@ -4,7 +4,7 @@ export const SITE = {
   nameEn: "Carelax",
   tagline: "헬스케어 대중화",
   thesis: "고품질 헬스케어를 합리적으로 — 누구에게나 회복이 닿게.",
-  positioning: "Accessible Quiet Recovery",
+  positioning: "Healthcare Democratization",
   description: "케어렉스는 고품질 헬스케어를 합리적으로 제안하며, 누구에게나 회복이 닿는 일상을 만듭니다.",
   smartStoreUrl: "https://smartstore.naver.com/carelax",
   blogUrl: "https://blog.naver.com/carelax0606",
