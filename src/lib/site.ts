@@ -70,7 +70,7 @@ export const HISTORY: HistoryItem[] = [
   { id: "honors", nameKo: "아너스", nameEn: "Honors", code: "CLX 990", era: "Archive / 3D", summary: "입체 안마 모듈로 몸의 굴곡을 따라가던 플래그십 기록입니다.", image: "/images/product-honors.jpg" },
   { id: "salute", nameKo: "샬루트", nameEn: "Salute", code: "CLX 770", era: "Archive / Soft", summary: "온 가족이 부담 없이 앉을 수 있는 부드러운 안마감을 제안했습니다.", image: "/images/product-salute.jpg" },
   { id: "rex", nameKo: "렉스", nameEn: "Rex", code: "R21", era: "Legacy / Smart", summary: "조그셔틀 조작으로 일상에 스며드는 스마트 휴식을 설계했습니다.", image: "/images/product-rex.jpg" },
-  { id: "오로라", nameKo: "오로라", nameEn: "Aurora", code: "CLX 570", era: "Legacy / Balance", summary: "필요한 케어 기능과 합리적인 선택의 균형을 담은 모델입니다.", image: "/images/product-aurora.jpg" },
+  { id: "aurora", nameKo: "오로라", nameEn: "Aurora", code: "CLX 570", era: "Legacy / Balance", summary: "필요한 케어 기능과 합리적인 선택의 균형을 담은 모델입니다.", image: "/images/product-aurora.jpg" },
   { id: "creampink", nameKo: "크림핑크", nameEn: "Cream Pink", code: "CLX 650", era: "Archive / Interior", summary: "가구처럼 어울리는 색감과 안마 경험을 함께 고민했습니다.", image: "/images/product-creampink.jpg" },
   { id: "avantgarde", nameKo: "아방가르", nameEn: "Avant-garde", code: "CLX 157", era: "Legacy / Compact", summary: "작은 공간에서도 본격적인 케어를 경험하도록 만든 컴팩트 기록입니다.", image: "/images/product-avantgarde.jpg" },
   { id: "compact", nameKo: "컴팩트", nameEn: "Compact", code: "S20", era: "Archive / Portable", summary: "가벼운 풋프린트로 이동과 배치의 자유를 생각한 회복의 기록입니다.", image: "/images/product-compact.jpg" },
